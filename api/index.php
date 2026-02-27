@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://cdn4-reg2.mm.oxygen.id/hls/{$_GET['id']}/index.m3u8");
